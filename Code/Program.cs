@@ -21,7 +21,7 @@ namespace Planner.Code
 
                 if (cond == 1)
                 {
-                    Schedule.addSchedule(act, i); //Add
+                    addSchedule.a(act, i); //Add
                     i++;
                     n++;
                 }
@@ -30,17 +30,15 @@ namespace Planner.Code
                 {
                     Console.WriteLine("1 = Semua, 2 = Berdasarkan Kategori");
                     show = Convert.ToInt32(Console.ReadLine());
-                    if (show == 1) Schedule.showSchedule(act, n);
-                    else if (show == 2)
+                    if (show == 1) ShowSchedule.showSchedule(act, n); //show all
+                    else if (show == 2) //show category
                     {
-                        Console.WriteLine("Kategori yang ingin di cari:");
-                        string kateg = Console.ReadLine();
-                        Schedule.showSchedule1(act, n, kateg);
+                        Mods.showSchedule(act, n);
                     }
                 }
-                else if (cond == 3) Schedule.delSchedule(act, n); //Delete
+                else if (cond == 3) delSchedule.a(act, n); //Delete
 
-                else if (cond == 4) Schedule.repSchedule(act, n); //Replace
+                else if (cond == 4) RepSchedule.a(act, n); //Replace
 
                 else if (cond == 5) cek = 1; //Exit
                 
