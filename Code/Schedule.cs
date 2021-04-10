@@ -4,15 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Planner
+namespace Planner.Code
 {
     public class Schedule
     {
-        private int cond;
-        public Schedule(int cond)
-        {
-            this.cond = cond;
-        }
+ 
 
         public static void addSchedule(Activity[] act, int i)
         {
@@ -52,7 +48,6 @@ namespace Planner
                 if (String.Equals(category, act[i].Category, StringComparison.InvariantCultureIgnoreCase))
                 {
                     j[c] = i;
-                    Console.WriteLine(j[c]); 
                     c++;
                 }
             }

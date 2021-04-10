@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Planner
+namespace Planner.Code
 {
     class Program
     {
