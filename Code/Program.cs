@@ -12,7 +12,8 @@ namespace Planner.Code
             int n = 0;
             int i = 0;
 
-            Console.WriteLine("Menu : \n1 = Add Activity \n2 = Show Schedule \n3 = Delete Activity \n4 = Replace Activity \n5 = exit");
+            opening text = new opening();
+            text.message();
 
             while (cek == 0)
             {
